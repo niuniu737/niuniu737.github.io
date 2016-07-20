@@ -1,0 +1,403 @@
+html,body{
+	font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, FreeSans, Arimo, "Droid Sans","wenquanyi micro hei","Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrap{
+	font-family: 'youyou';
+	font-size: 16px;
+	overflow: hidden;
+	padding-bottom: 120px;
+}
+.shadow{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	background: rgba(0,0,0,.9);
+	overflow-y:auto;
+	display: none;
+	opacity: 0;
+	cursor: pointer;
+}
+.shadow-point{
+	cursor: pointer;
+}
+.shadow-box{
+	max-width: 600px;
+	margin: 100px auto;
+	border-radius: 10px;
+	padding: 50px;
+	background: #fff;
+}
+.shadow-box img{
+	max-width: 600px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+}
+.triangle{
+	border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 20px solid #eee;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+}
+.header{
+    width: 1162px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'youyou';
+    src: url('./font/youyou.eot'),
+         url('./font/youyou.woff2') format('woff2'),
+         url('./font/youyou.woff') format('woff'),
+         url('./font/youyou.svg#youyou') format('svg'),
+         url('./font/youyou.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.logo{
+	width: 85px;
+	margin-top: 45px;
+	height: 85px;
+}
+.logo img{
+	width: 100%;
+}
+.nav{
+	position: absolute;
+	top: 0;
+	width: 504px;
+	left: 50%;
+	margin-left: -252px;
+}
+.nav ul{
+	margin: 0;
+	padding: 0;
+}
+.nav ul li{
+	float: left;
+	width: 107px;
+	height: 55px;
+	list-style: none;
+	margin-right: 91px;
+	text-align: center;
+	line-height: 25px;
+	padding-top:90px;
+}
+.nav ul li:hover{
+	border-bottom:2px solid #7d7d7d;
+}
+.nav ul li a{
+	color:#3d3d3d;
+	text-decoration: none;
+}
+.nav ul li:last-child{
+	margin-right: 0;
+	
+}
+.content{
+	width: 100%;
+}
+.content .author{
+	text-align: center;
+	height: 470px;
+	width: 100%;
+}
+.author-box{
+	width: 300%;
+	height: 470px;
+	transition: all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition: all .5s; /* Safari 和 Chrome */
+	-o-transition: all .5s; /* Opera */
+}
+.author-ever{
+	width: 33.33%;
+	float: left;
+	height: 100%;
+}
+.author-ever img{
+	height: 100%;
+	display: inline-block;
+}
+
+.picture{
+	height: 835px;
+	background: #fff;
+}
+.picture-title{
+	font-family: 'youyou';
+	text-align: center;
+	line-height: 25px;
+	overflow: hidden;
+	width: 108px;
+	height: 60px;
+	border-bottom: 2px solid #7d7d7d;
+	margin: 0 auto;
+	color: #3d3d3d
+}
+.picture-box{
+	width: 1119px;
+	height: 660px;
+	margin: 0 auto;
+	margin-top: 38px;
+	overflow:hidden;
+}
+.picture-ever{
+	width: 373px;
+	background: #eee;
+	height: 330px;
+	float: left;
+	line-height: 330px;
+	overflow: hidden;
+	text-align: center;
+	color:#3d3d3d;
+}
+.picture-ever img{
+	width: 100%;
+	vertical-align: middle;
+	transition: all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition: all .5s; /* Safari 和 Chrome */
+	-o-transition: all .5s; /* Opera */
+}
+.starSty img{
+	width: auto;
+	height: 100%;
+	margin-left: -60px;
+	display: inline-block;
+}
+.picture-ever img:hover{
+	width: 120%;
+	margin-top: -60px;
+	margin-left: -60px;
+}
+.starSty img:hover{
+	width: auto;
+	height: 120%;
+	margin-left: -100px;
+}
+.picbg{
+	background: #78b82a;
+}
+.picbg3{
+	background: #fff
+}
+.picbg2{
+	background: #eee;
+}
+.banner-title,.inset-title,.book-title,.poster-title,.vision-title{
+	width: 108px;
+	padding-top:30px;
+	text-align: center;
+	line-height: 25px;
+	margin: 0 auto;
+	height: 56px;
+	border-bottom:2px solid #7d7d7d;
+	color:#3d3d3d;
+	overflow:hidden;
+}
+.banner-box{
+	position: relative;
+	margin: 0 auto;
+	margin-top: 77px;
+	width: 1120px;
+	height: 410px;
+	overflow: hidden;
+}
+.banner-scroll{
+	width: 1344px;
+	transition: all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition: all .5s; /* Safari 和 Chrome */
+	-o-transition: all .5s; /* Opera */
+}
+.banner-left,.banner-right{
+	top: 0;
+	font-size: 80px;
+	position: absolute;
+	color:#000;
+	opacity: .5;
+	margin-top: 160px;
+	display: none;
+	cursor: pointer;
+}
+.banner-box:hover .banner-handle{
+	display: block;
+}
+.banner-left{
+	margin-left: -10px;
+	left: 0;
+	float: left;
+}
+.banner-right{
+	margin-right: -10px;
+	right: 0;
+	float: right;
+}
+.banner-ever{
+	width: 224px;
+	height: 410px;
+	float: left;
+	overflow: hidden;
+}
+.banner-ever img{
+	display: inline-block;
+	height: 100%;
+}
+.inset-box{
+	margin: 0 auto;
+	margin-top: 77px;
+	width: 1120px;
+}
+.inset-ever{
+	width: 224px;
+	height: 224px;
+	float: left;
+	line-height: 224px;
+	overflow: hidden;
+}
+.book-long{
+	width: 200px; 
+}
+.inset-ever img{
+	vertical-align: middle;
+	width: 100%;
+}
+.book-box{
+	margin: 0 auto;
+	margin-top: 84px;
+	width: 1120px;
+}
+.book-ever{
+	position: relative;
+	width: 266px;
+	margin-right: 158px;
+	height: 396px;
+	float: left;
+}
+.book-ever-last{
+	margin: 0
+}
+.book-ever-top,.book-ever-bottom{
+	width: 266px;
+	height: 198px;
+	overflow: hidden;
+	text-align: center;
+}
+.book-posi{
+	position: absolute;
+	top: 198px;
+	left: 50%;
+	margin-left:-12px;
+}
+.book-ever-bottom img{
+	height: 100%;
+}
+.poster-box{
+	width: 1117px;
+	margin: 0 auto;
+	margin-top: 84px;
+}
+.poster-list{
+	width: 253px;
+	margin-right: 35px;
+	float: left;
+}
+.poster-list:last-child{
+	margin-right: 0;
+}
+.poster-ever{
+	margin-bottom: 15px;
+	width: 253px;
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+}
+.poster-list-last{
+	margin-right: 0;
+}
+.poster-ever img{
+	display: block;
+	width: 100%;
+}
+.poster-long{
+	width: 253px;
+	height: 380px;
+}
+.poster-short{
+	width: 253px;
+	height: 253px;
+}
+.vision-box{
+	margin-top: 84px;
+	height: 380px;
+}
+.vision-ever{
+	float: left;
+	height: 380px;
+	width: 50%;
+	overflow: hidden;
+}
+.vision-ever img{
+	width: 100%;
+	transition: all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition: all .5s; /* Safari 和 Chrome */
+	-o-transition: all .5s; /* Opera */
+}
+.vision-ever img:hover{
+	width: 120%;
+	margin-left: -60px;
+	margin-top: -80px;
+}
+.vision-posi img{
+	display: inline-block;
+	margin-top: -47px;
+}
+.resume img{
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+}
+.book-ever-bottom{
+	width: 100%;
+	height: 198px;
+	background: #fff;
+}
+.book-ever-long img{
+	width: 100%;
+	margin-top: -20px;
+	height: auto;
+}
+.phone,.qq{
+	width: 500px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	letter-spacing: .1em;
+}
+.phone{
+	margin-top: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
