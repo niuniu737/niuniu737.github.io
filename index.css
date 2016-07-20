@@ -142,13 +142,14 @@ html,body{
 	height: 60px;
 	border-bottom: 2px solid #7d7d7d;
 	margin: 0 auto;
-	color: #3d3d3d
+	color: #3d3d3d;
+	margin-top:70px;
 }
 .picture-box{
 	width: 1119px;
 	height: 660px;
 	margin: 0 auto;
-	margin-top: 38px;
+	margin-top: 77px;
 	overflow:hidden;
 }
 .picture-ever{
@@ -162,6 +163,7 @@ html,body{
 	color:#3d3d3d;
 }
 .picture-ever img{
+	display: block;
 	width: 100%;
 	vertical-align: middle;
 	transition: all .5s;
@@ -173,12 +175,15 @@ html,body{
 	width: auto;
 	height: 100%;
 	margin-left: -60px;
-	display: inline-block;
 }
-.picture-ever img:hover{
+.picture-change img:hover{
 	width: 120%;
 	margin-top: -60px;
 	margin-left: -60px;
+}
+.picture-word img{
+	height: 100%;
+	width: auto;
 }
 .starSty img:hover{
 	width: auto;
@@ -204,6 +209,10 @@ html,body{
 	border-bottom:2px solid #7d7d7d;
 	color:#3d3d3d;
 	overflow:hidden;
+	margin-top: 50px;
+}
+.banner-title{
+	margin-top: 0px;
 }
 .banner-box{
 	position: relative;
@@ -266,7 +275,7 @@ html,body{
 	overflow: hidden;
 }
 .book-long{
-	width: 200px; 
+	width: 170px; 
 }
 .inset-ever img{
 	vertical-align: middle;
@@ -292,6 +301,9 @@ html,body{
 	height: 198px;
 	overflow: hidden;
 	text-align: center;
+}
+.book-ever-top{
+	line-height: 198px;
 }
 .book-posi{
 	position: absolute;
@@ -388,8 +400,9 @@ html,body{
 .phone{
 	margin-top: 200px;
 }
-
-
+.en-title{
+	color:#999;
+}
 
 
 
