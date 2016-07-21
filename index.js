@@ -1,23 +1,41 @@
 $(function () {
 	var authorBoxWidth = $('.author-box').width();
-    var authorWidth =  authorBoxWidth * 33.33 / 100;
+    var authorWidth =  authorBoxWidth * 50 / 100;
     var authorBoxMargin = 0;
     var index = 0;
     var scroll = function () {
     	index ++;
     	authorBoxMargin -=  authorWidth;
-    	if (index % 3 == 0) {
+    	if (index % 2 == 0) {
     		authorBoxMargin = 0;
     	}
     	$('.author-box').css({'margin-left': authorBoxMargin});
     }
     var key = window.setInterval(scroll, 3000);
 
+    var insetMargin = 0;
+    $('.inset-left').click(function(){
+        insetMargin -= 224;
+        if (insetMargin < -224) {
+            insetMargin = -224;
+            return false;
+        } 
+        $('.inset-scroll').css({'margin-left' : insetMargin});
+    })
+    $('.inset-right').click(function(){
+        insetMargin += 224;
+        if (insetMargin > 0) {
+            insetMargin = 0;
+            return false;
+        };
+        $('.inset-scroll').css({'margin-left' : insetMargin});
+    })
+
     var bannerMargin = 0;
     $('.banner-left').click(function(){
         bannerMargin -= 224;
-        if (bannerMargin < -224) {
-            bannerMargin = -224;
+        if (bannerMargin < -448) {
+            bannerMargin = -448;
             return false;
         } 
         $('.banner-scroll').css({'margin-left' : bannerMargin});

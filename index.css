@@ -112,7 +112,7 @@ html,body{
 	width: 100%;
 }
 .author-box{
-	width: 300%;
+	width: 200%;
 	height: 470px;
 	transition: all .5s;
 	-moz-transition: all .5s; /* Firefox 4 */
@@ -120,7 +120,7 @@ html,body{
 	-o-transition: all .5s; /* Opera */
 }
 .author-ever{
-	width: 33.33%;
+	width: 50%;
 	float: left;
 	height: 100%;
 }
@@ -223,13 +223,20 @@ html,body{
 	overflow: hidden;
 }
 .banner-scroll{
+	width: 1568px;
+	transition: all .5s;
+	-moz-transition: all .5s; /* Firefox 4 */
+	-webkit-transition: all .5s; /* Safari 和 Chrome */
+	-o-transition: all .5s; /* Opera */
+}
+.inset-scroll{
 	width: 1344px;
 	transition: all .5s;
 	-moz-transition: all .5s; /* Firefox 4 */
 	-webkit-transition: all .5s; /* Safari 和 Chrome */
 	-o-transition: all .5s; /* Opera */
 }
-.banner-left,.banner-right{
+.banner-left,.banner-right,.inset-left,.inset-right{
 	top: 0;
 	font-size: 80px;
 	position: absolute;
@@ -239,15 +246,18 @@ html,body{
 	display: none;
 	cursor: pointer;
 }
-.banner-box:hover .banner-handle{
+.inset-left,.inset-right{
+	margin-top:80px;
+}
+.banner-box:hover .banner-handle,.inset-box:hover .banner-handle{
 	display: block;
 }
-.banner-left{
+.banner-left,.inset-left{
 	margin-left: -10px;
 	left: 0;
 	float: left;
 }
-.banner-right{
+.banner-right,.inset-right{
 	margin-right: -10px;
 	right: 0;
 	float: right;
@@ -266,6 +276,9 @@ html,body{
 	margin: 0 auto;
 	margin-top: 77px;
 	width: 1120px;
+	height: 224px;
+	position: relative;
+	overflow: hidden;
 }
 .inset-ever{
 	width: 224px;
@@ -324,15 +337,12 @@ html,body{
 	margin-right: 35px;
 	float: left;
 }
-.poster-list:last-child{
+.poster-list-last{
 	margin-right: 0;
 }
 .poster-ever{
-	margin-bottom: 15px;
 	width: 253px;
-	margin-right: 10px;
-	margin-left: 10px;
-	float: left;
+	margin-bottom: 35px;
 }
 .poster-list-last{
 	margin-right: 0;
