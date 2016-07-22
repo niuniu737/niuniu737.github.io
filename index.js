@@ -32,7 +32,7 @@ $(function () {
     })
 
     var bannerMargin = 0;
-    $('.banner-left').click(function(){
+    $('.banner-right').click(function(){
         bannerMargin -= 224;
         if (bannerMargin < -448) {
             bannerMargin = -448;
@@ -40,7 +40,7 @@ $(function () {
         } 
         $('.banner-scroll').css({'margin-left' : bannerMargin});
     })
-    $('.banner-right').click(function(){
+    $('.banner-left').click(function(){
         bannerMargin += 224;
         if (bannerMargin > 0) {
             bannerMargin = 0;
