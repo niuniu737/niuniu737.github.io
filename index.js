@@ -14,7 +14,7 @@ $(function () {
     var key = window.setInterval(scroll, 3000);
 
     var insetMargin = 0;
-    $('.inset-left').click(function(){
+    $('.inset-right').click(function(){
         insetMargin -= 224;
         if (insetMargin < -224) {
             insetMargin = -224;
@@ -22,7 +22,7 @@ $(function () {
         } 
         $('.inset-scroll').css({'margin-left' : insetMargin});
     })
-    $('.inset-right').click(function(){
+    $('.inset-left').click(function(){
         insetMargin += 224;
         if (insetMargin > 0) {
             insetMargin = 0;
